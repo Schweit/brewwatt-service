@@ -3,11 +3,9 @@ var path = require('path');
 var http = require('http');
 var app = express();
 var routes = require('./server/routes');
-var moment = require('moment');
-
+app.use(express.json());
 app.use('/rpio', routes);
-app.use('/temp', routes);
-app.use(moment);
+app.use('/token', routes);
 
 app.get('/test', function(req, res) {
   res.send("Something");
