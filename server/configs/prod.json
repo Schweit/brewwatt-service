@@ -1,0 +1,10 @@
+{
+    "enums":{
+        "gpio": {
+            "LOW": 0,
+            "HIGH": 1,
+            "OPEN": 2,
+            "CLOSE": 3
+        }
+    }
+}
